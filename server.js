@@ -9,7 +9,7 @@ client.messages
       .create({
          from: 'whatsapp:+14155238886',
          body: 'Hello from Nodejs!',
-         to: 'whatsapp:+917042989596'
+         to: 'whatsapp:' + process.env.mmobileNumber
        })
       .then(message => console.log(message))
       .catch(err => console.log(err));
